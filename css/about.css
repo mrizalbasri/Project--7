@@ -92,7 +92,7 @@ nav .login .cart:hover {
 .banner_bg {
     width: 100%;
     height: 50vh; /* Sets the height of the banner to 50% of the viewport height */
-    background-image: linear-gradient(rgba(94, 68, 49, 0.5),rgba(94, 68, 49, 0.5)), url("/img/bg11.png");
+    background-image: linear-gradient(rgba(94, 68, 49, 0.5),rgba(94, 68, 49, 0.5));
     background-size: cover; /* Ensures the background image covers the entire area */
     background-position: center; /* Centers the background image */
 }
