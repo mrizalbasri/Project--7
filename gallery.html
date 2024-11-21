@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="short icon" href="img/logo.png">
+</head>
+<body style="background-color: #FFF5E6;">
+
+    <!--Navigation Bar-->
+
+    <nav
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background: #5A3825;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    "
+  >
+    <div class="logo">
+      <a href="index.html">
+        <img
+          src="img/logo.png"
+          style="width: 60px; cursor: pointer; transition: transform 0.3s ease;"
+          onmouseover="this.style.transform='scale(1.1)'"
+          onmouseout="this.style.transform='scale(1)'"
+        />
+      </a>
+    </div>
+  
+    <ul
+      style="
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+      "
+    >
+      <li style="margin: 0 10px;">
+        <a
+          href="index.html"
+          class="action"
+          style="
+            text-decoration: none;
+            color: #FFF5E6;
+            font-weight: bold;
+            transition: color 0.3s, background 0.3s, padding 0.3s;
+            padding: 7px 12px;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.2);
+          "
+          onmouseover="this.style.color='#FFD966'; this.style.background='rgba(0, 0, 0, 0.2)'; this.style.padding='7px 12px';"
+          onmouseout="this.style.color='#FFF5E6'; this.style.background='none'; this.style.padding='5px 10px';"
+        >
+          Home
+        </a>
+      </li>
+      <li style="margin: 0 10px;">
+        <a
+          href="about.html"
+          style="
+            text-decoration: none;
+            color: #FFF5E6;
+            font-weight: bold;
+            transition: color 0.3s, background 0.3s, padding 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+          "
+          onmouseover="this.style.color='#FFD966'; this.style.background='rgba(0, 0, 0, 0.2)'; this.style.padding='7px 12px';"
+          onmouseout="this.style.color='#FFF5E6'; this.style.background='none'; this.style.padding='5px 10px';"
+        >
+          About
+        </a>
+      </li>
+      <li style="margin: 0 10px;">
+        <a
+          href="menu.html"
+          style="
+            text-decoration: none;
+            color: #FFF5E6;
+            font-weight: bold;
+            transition: color 0.3s, background 0.3s, padding 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+          "
+          onmouseover="this.style.color='#FFD966'; this.style.background='rgba(0, 0, 0, 0.2)'; this.style.padding='7px 12px';"
+          onmouseout="this.style.color='#FFF5E6'; this.style.background='none'; this.style.padding='5px 10px';"
+        >
+          Menu
+        </a>
+      </li>
+      <li style="margin: 0 10px;">
+        <a
+          href="gallery.html"
+          style="
+            text-decoration: none;
+            color: #FFF5E6;
+            font-weight: bold;
+            transition: color 0.3s, background 0.3s, padding 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+          "
+          onmouseover="this.style.color='#FFD966'; this.style.background='rgba(0, 0, 0, 0.2)'; this.style.padding='7px 12px';"
+          onmouseout="this.style.color='#FFF5E6'; this.style.background='none'; this.style.padding='5px 10px';"
+        >
+          Gallery
+        </a>
+      </li>
+    </ul>
+  
+    <div class="login">
+      <a
+        href="login.html"
+        style="
+          color: #ffffff;
+          text-decoration: none;
+          border: 2px solid #FFF5E6;
+          padding: 7px 15px;
+          border-radius: 20px;
+          transition: background 0.3s, color 0.3s, transform 0.3s;
+          display: inline-block;
+        "
+        onmouseover="this.style.background='#FFF5E6'; this.style.color='#5A3825'; this.style.transform='scale(1.05)';"
+        onmouseout="this.style.background='none'; this.style.color='#ffffff'; this.style.transform='scale(1)';"
+      >
+        Login
+      </a>
+      <a href="index.html"         style="
+      color: #ffffff;
+      text-decoration: none;
+      border: 2px solid #FFF5E6;
+      padding: 7px 15px;
+      border-radius: 20px;
+      transition: background 0.3s, color 0.3s, transform 0.3s;
+      display: inline-block;
+    "
+    onmouseover="this.style.background='#FFF5E6'; this.style.color='#5A3825'; this.style.transform='scale(1.05)';"
+    onmouseout="this.style.background='none'; this.style.color='#ffffff'; this.style.transform='scale(1)';">
+    <i class="fa-solid fa-cart-shopping"></i>
+        
+        </a>
+    </div>
+  </nav>
+  
+
+
+    <!--Banner-->
+
+    <div class="banner_bg">
+        <h1 style="color: #FFD966;">Popular<span>Gallery</span></h1>
+    </div>
+
+
+
+
+    <!--Gallery-->
+
+    <div class="gallery anim">
+
+        <div class="gallery_box">
+
+            <div class="gallery_image">
+                <img src="img/gallery.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery2.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery3.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery4.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery5.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery6.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery7.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery8.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery9.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery10.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery11.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery12.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery13.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery14.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery15.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery16.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery17.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery18.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery19.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery20.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery21.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery22.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery23.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery24.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery25.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery26.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery27.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery28.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery29.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery30.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery31.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery32.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery33.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery34.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery35.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery36.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery37.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery38.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery39.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery40.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery41.jpg">
+            </div>
+
+            <div class="gallery_image">
+                <img src="img/gallery42.jpg">
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+          <div class="footer_tag">
+            <h2>Location</h2>
+            <p>
+              Jl Manis Raya No. 45, Kota Pekanbaru, Riau 28125</p>
+            <p>
+              Jl Pahlawan No. 12, Kota Pekanbaru 28293
+            </p>
+            <p>
+              Jl Kenangan No. 78, Kota Pekanbaru, Riau 28112
+            </p>
+          </div>
+  
+          <div class="footer_tag">
+            <h2>Quick Link</h2>
+            <p>Home</p>
+            <p>About</p>
+            <p>Menu</p>
+            <p>Gallery</p>
+            <p>Order</p>
+          </div>
+  
+          <div class="footer_tag">
+            <h2>Contact</h2>
+            <p>rizalbasri800@gmail.com</p>
+            <p>+62 25 5568 456</p>
+            <p>pandapotansamuel3@gmail.com</p>
+          </div>
+  
+          <div class="footer_tag">
+            <h2>Our Services</h2>
+            <p>Fast Delivery</p>
+            <p>Easy Payments</p>
+            <p>24 x 7 Service</p>
+          </div>
+  
+          <div class="footer_tag">
+            <h2>Follows</h2>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+  
+        <p class="end">
+          Designed by<span><i class="fa-solid fa-face-grin"></i> Kelompok 7</span>
+        </p>
+      </footer>
+    
+</body>
+</html>

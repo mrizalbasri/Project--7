@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="singup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="short icon" href="img/logo.png">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bglog.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero .login_form {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    /* background-image: url(img/cardlog.png); */
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero .login_form h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .hero .login_form h1::after {
+    content: '';
+    width: 20%;
+    height: 3px;
+    background: #8fcdd9;
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero .login_form .input_box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hero .login_form .input_box .field {
+    width: 100%;
+    border-bottom: 1px solid #919191;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    outline: none;
+    background: none;
+    font-size: 14px;
+  }
+  
+  .hero .login_form .input_box .check_box {
+    margin: 25px 0;
+    accent-color: #8fcdd9;
+    cursor: pointer;
+  }
+  
+  .hero .login_form .input_box p {
+    position: relative;
+    left: 20px;
+    bottom: 40px;
+    width: 50%;
+    color: #434343;
+  }
+  
+  .hero .login_form .input_box .submit_btn {
+    outline: none;
+    border: none;
+    background: #8fcdd9;
+    padding: 10px 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .hero .login_form .social_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+  }
+  
+  .hero .login_form .social_icon i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    background: #8fcdd9;
+    color: #434343;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero .login_form .social_icon i:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    transform: translateY(-5px);
+  }
+  
+  .hero .login_form .tag {
+    margin: 25px auto 0 auto;
+    width: 150px;
+  }
+  
+  .hero .login_form .tag span {
+    font-size: 15px;
+  }
+  
+  .hero .login_form .tag a {
+    font-size: 15px;
+    margin-left: 5px;
+    color: #8fcdd9;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .hero .login_form {
+      width: 90%;
+      height: auto;
+    }
+  
+    .hero .login_form h1 {
+      font-size: 24px;
+    }
+  
+    .hero .login_form h1::after {
+      margin-top: 45px;
+    }
+  
+    .hero .login_form .input_box {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+    
+    <div class="hero">
+
+        <div class="login_form">
+
+            <h1>Register</h1>
+
+            <form class="input_box">
+
+                <input type="text" class="field" placeholder="Name">
+                <input type="password" class="field" placeholder="Password" maxlength="10">
+                <input type="email" class="field" placeholder="Email">
+                <input type="checkbox" class="check_box"><p>Remember Password</p>
+                <button type="submit"  class="submit_btn">Register</button>
+
+                <div class="social_icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google"></i>
+                </div>
+
+                <div class="tag">
+                    <span>New User?</span>
+                    <a href="login.html">Log in</a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

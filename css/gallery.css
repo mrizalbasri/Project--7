@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+
+
+/* Banner */
+
+.banner_bg {
+  width: 100%;
+  height: 50vh; /* Sets the height of the banner to 50% of the viewport height */
+  background-image: linear-gradient(rgba(94, 68, 49, 0.5), rgba(94, 68, 49, 0.5)), url('/img/bg11.jpg');
+  background-size: cover; /* Ensures the background image covers the entire area */
+  background-position: center; /* Centers the background image */
+}
+
+.banner_bg h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px; /* Sets the font size for the main heading */
+  position: relative;
+  top: 50%; /* Positions the heading vertically in the center of the banner */
+  color: #fff; /* Sets the text color to white */
+}
+
+.banner_bg h1 span {
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+/* Gallery */
+
+.gallery {
+  width: 100%;
+  padding: 10px 0 20px 0; /* Adds vertical padding for spacing */
+}
+
+.gallery .gallery_box {
+  width: 95%; /* Sets the width of the gallery box */
+  margin: 50px auto 0 auto; /* Centers the gallery box with top margin */
+  display: grid; /* Uses a grid layout for gallery items */
+  grid-template-columns: 1fr 1fr 1fr; /* Creates three equal columns */
+  grid-gap: 12px 10px; /* Space between grid items */
+}
+
+.gallery .gallery_box .gallery_image {
+  width: 100%; 
+  height: auto; /* Maintains the aspect ratio of the images */
+  overflow: hidden; /* Hides overflow for rounded corners */
+  margin: 0 auto;
+  border-radius: 5px; /* Rounds the corners of the image container */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adds shadow effect to the image container */
+}
+
+.gallery .gallery_box .gallery_image img {
+  width: 100%; /* Ensures the image takes the full width of the container */
+  height: 100%; /* Sets the height to fill the container */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  object-position: center; /* Centers the image within the container */
+  border-radius: 5px; /* Rounds the corners of the image */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: 0.3s; /* Smooth transition effect for hover state */
+}
+
+.gallery .gallery_box .gallery_image img:hover {
+  transform: scale(1.1); /* Scales the image on hover for a zoom effect */
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+  .banner_bg {
+      height: 40vh; /* Adjusts banner height for smaller screens */
+  }
+
+  .banner_bg h1 {
+      font-size: 35px; /* Decreases font size for smaller screens */
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .banner_bg {
+      height: 30vh; /* Further adjusts banner height for mobile devices */
+  }
+
+  .banner_bg h1 {
+      font-size: 28px; /* Further decreases font size for mobile devices */
+  }
+
+  .gallery .gallery_box {
+      grid-template-columns: 1fr; /* Stacks gallery items in a single column on very small screens */
+  }
+}
+
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #5A3825;
+  padding: 20px 0;
+}
+
+footer .footer_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  color: #FFF5E6;
+}
+
+footer .footer_tag {
+  text-align: center;
+}
+
+footer .footer_tag h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer .footer_tag p {
+  margin: 10px 0;
+}
+
+footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #E0A800;
+}
+
+footer .end span {
+  color: #ffffff;
+  margin-left: 5px;
+}
+  
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #8fcdd9
+    ;
+    border-radius: 10px;
+  }
+  
+  /* Animation */
+  .anim {
+    transform: translateY(40px);
+    opacity: 0;
+    animation: moveup 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes moveup {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      nav ul {
+        justify-content: center;
+      }
+    
+      nav ul li {
+        display: block;
+        margin: 5px 0;
+      }
+    
+      nav .logo img {
+        width: 50px;
+      }
+
+
+      .gallery .gallery_box {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .gallery .gallery_box .gallery_image {
+        width: 100%; 
+    }
+  }

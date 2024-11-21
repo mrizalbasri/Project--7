@@ -1,0 +1,267 @@
+/* menu */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #5A3825;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+nav .logo img {
+  width: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+nav .logo img:hover {
+  transform: scale(1.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFF5E6;
+  font-weight: bold;
+  transition: color 0.3s, background 0.3s, padding 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.action {
+  color: #FFD966;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 7px 12px;
+}
+
+nav .login a {
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #FFF5E6;
+  padding: 7px 15px;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav .login a:hover {
+  background: #FFF5E6;
+  color: #5A3825;
+  transform: scale(1.05);
+}
+
+
+  
+
+/* Banner Section */
+.banner_bg {
+  width: 100%;
+  height: 50vh; /* Sets the height of the banner to 50% of the viewport height */
+  background-image: linear-gradient(rgba(94, 68, 49, 0.5),rgba(94, 68, 49, 0.5)), url('/img/bg.gif');
+  background-size: cover; /* Ensures the background image covers the entire area */
+  background-position: center; /* Centers the background image */
+}
+
+.banner_bg h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px; /* Sets the font size for the main heading */
+  position: relative;
+  top: 50%; /* Positions the heading vertically in the center of the banner */
+  color: #fff; /* Sets the text color to white */
+}
+
+.banner_bg h1 span {
+  color: #8fcdd9; /* Sets the color for the span element inside the heading */
+  margin-left: 10px; /* Adds space to the left of the span */
+}
+
+
+
+/* Menu Section */
+.menu {
+  width: 100%;
+  padding: 20px 0; /* Adds vertical padding for spacing */
+}
+
+.menu .menu_box {
+  width: 95%; /* Sets the width of the menu box */
+  margin: 0 auto; /* Centers the menu box horizontally */
+  display: grid; /* Uses a grid layout for menu items */
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.menu_card {
+  background-image: url('/img/menubg.png'); /* Sets a background image for each menu card */
+  background-size: cover; /* Ensures the background image covers the card area */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  padding: 20px; /* Adds padding inside the menu card */
+  text-align: center; /* Centers text inside the card */
+  border-radius: 10px; /* Rounds the corners of the card */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to the card */
+}
+
+.menu_img {
+  width: 100%; /* Ensures the image takes the full width of the card */
+  height: 200px; /* Sets a fixed height for the image */
+  margin-bottom: 15px; /* Adds space below the image */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the image */
+}
+
+ img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu_text h2 {
+  font-size: 24px; /* Sets the font size for the menu item title */
+  margin-bottom: 10px; /* Adds space below the title */
+}
+
+.menu_text p {
+  line-height: 1.5; /* Sets line height for better readability */
+  margin-bottom: 15px; /* Adds space below the paragraph */
+}
+
+.menu_icon {
+  color: #facc22; /* Sets the color for the menu icon */
+  margin: 8px 0; /* Adds vertical margin for spacing */
+}
+
+.menu_btn {
+  color: #000; /* Sets the text color for the button */
+  text-decoration: none; /* Removes underline from the button text */
+  padding: 10px 20px; /* Adds padding inside the button */
+  border: 2px solid #A6646A; /* Adds a border to the button */
+  transition: 0.3s; /* Smooth transition effect for hover states */
+}
+
+.menu_text .menu_btn:hover {
+  background: #EB85A7; /* Changes background color on hover */
+  color: #fff; /* Changes text color on hover */
+}
+
+
+  /* Footer */
+  footer {
+    width: 100%;
+    background: #5A3825;
+    padding: 20px 0;
+  }
+  
+  footer .footer_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    color: #FFF5E6;
+  }
+  
+  footer .footer_tag {
+    text-align: center;
+  }
+  
+  footer .footer_tag h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  footer .footer_tag p {
+    margin: 10px 0;
+  }
+  
+  footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #E0A800;
+  }
+  
+  footer .end span {
+    color: #ffffff;
+    margin-left: 5px;
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #8fcdd9;
+    border-radius: 10px;
+  }
+  
+  /* Animation */
+  .anim {
+    transform: translateY(40px);
+    opacity: 0;
+    animation: moveup 0.5s ease-in-out forwards;
+  }
+  
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  /* Responsive Menu Adjustments */
+@media (max-width: 1024px) {
+      .menu .menu_box {
+        grid-template-columns: repeat(2, 1fr); /* Changes to two columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      nav ul {
+        justify-content: center;
+      }
+    
+      nav ul li {
+        display: block;
+        margin: 5px 0;
+      }
+    
+      nav .logo img {
+        width: 50px;
+      }
+
+
+      .menu .menu_box {
+        grid-template-columns: 1fr; /* Stacks menu items in a single column on very small screens */
+    }
+  }
