@@ -184,6 +184,11 @@ section .main .main_text .btn:hover::before{
   min-width: 300px;
 }
 
+.about .about_main .about_text h1 span{
+  color: #facc22;
+  margin-right: 15px;
+}
+
 .about_services {
   display: grid; /* CSS Grid for responsive layout */
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Auto-fit creates responsive columns that adjust to container width */
@@ -406,7 +411,6 @@ section .main .main_text .btn:hover::before{
   text-decoration: none;
   position: relative;
   top: 20px;
-  /* left: 44%; */
   z-index: 5;
 }
 
@@ -463,7 +467,7 @@ section .main .main_text .btn:hover::before{
 }
 
 
-/* Responsive Gallery */
+/*Gallery */
 
 .gallery {
 padding: 2rem ;
@@ -519,7 +523,7 @@ padding: 2rem ;
  padding: 0rem ;
 }
 
-/* Responsive Offer Section */
+/*Offer Section */
 .offer .offer_box {
   width: 95%;
   display: grid;
@@ -654,8 +658,6 @@ padding: 2rem ;
 
 .team{
   padding: 3rem 0 0 0;
-
-  background-image: url(image/bg1.jpg);
   background-size: cover;
   background-position: center;
 }
